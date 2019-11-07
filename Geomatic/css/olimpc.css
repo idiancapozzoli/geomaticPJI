@@ -1,0 +1,31 @@
+.side-text{
+	width: 70%;
+	border: 10px solid transparent;
+	float: left;
+	text-align: left;
+}
+.img-face{
+	float: left;
+	width: 30%;
+	border: 10px solid transparent;
+
+}
+.box-medal{
+	border: 30px solid transparent;
+	font-size: 30px;
+}
+button{
+	border-radius: 5px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 800px){
+	.img-face{
+		float: none;
+		width: 100%;
+	}
+	.side-text{
+		float: none;
+		width: 100%;
+	}
+}
