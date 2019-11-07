@@ -1,0 +1,28 @@
+.tabela{
+	table-layout: auto;
+	width: 50%;
+	float: left;
+	padding: 10px;
+	border-collapse: separate;
+	empty-cells: hide;
+	background-color: #E6E6E6;
+	align-items: center;
+	text-align: center;
+}
+td{
+	border-top: solid black 2px;
+	width:14.28%;
+}
+td,th{
+	padding: 10px;
+}
+a{
+	color: red;
+}
+
+@media screen and (max-width: 900px){
+	.tabela{
+		width: 100%;
+		float: none;
+	}
+}
