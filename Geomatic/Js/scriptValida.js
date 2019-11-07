@@ -4,7 +4,7 @@ $(document).ready(function(){
   $("#erro").hide();
 
 
-  $("#submit").click(function(){
+  $("#enviar").click(function(){
     if($("#nomeInput").val()=="" ||  $("#nomeInput").val().length<3){
       $("#nome").css({"color":"red","background-color":"#F78181","border":"1px solid red"});
       alert("Preencha o campo nome com mais de 3 caracteres");
@@ -54,6 +54,6 @@ $(document).ready(function(){
       return false;
     }
 
-
+    $("#cadastro").submit();
   });
 });

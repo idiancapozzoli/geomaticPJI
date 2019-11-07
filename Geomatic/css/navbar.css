@@ -25,6 +25,12 @@ article{
 	border: 5px solid transparent;
 	box-sizing: border-box;
 }
+.width{
+	height: 500px;
+}
+.img{
+	height: 65%;
+}
 .mar-top{
 	margin-top: 50px;
 }

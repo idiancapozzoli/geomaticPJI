@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/forum.css">
+
+  <script src="Js/jquery.min.js"></script>
+  <script src="Js/scriptTopico.js"></script>
+
+  <title>Topico</title>
+
+</head>
+<body background="img/Lizards2.0.jpg">
+  <nav class="navbar navbar-dark cor2">
+    <a class="navbar-brand" href="\GeoMatic\HomePage.html">
+      <img src="\GeoMatic\img\logo.png" width="30" height="30" class="d-inline-block align-top titulo" alt="">
+      GeoMatic
+    </a>
+  </nav>
+  <nav class="nav nav-pills flex-column flex-sm-row cor">
+    <a class="flex-sm-fill text-sm-center nav-link" href="\GeoMatic\Olimpiadas.html">Olimpiadas</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="\GeoMatic\Calendario.html">Calendario</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="\GeoMatic\Curiosidades.html">Curiosidades</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="\GeoMatic\Medalhas.html">Medalhas</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="\GeoMatic\Forum.html">Forum</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Software</a>
+  </nav>
+
+  <div class="container mt-5">
+
+    <div class="caixa">
+      <h1>
+        Topico
+      </h1>
+      <p id="erro">Erro ao preencher o tópico, necessário escrever algo</p>
+      <form method="get" action="postado.php">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1" id="texto">Escreva o tópico</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Topico" name="texto">
+      </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="tipoTopico" id="select">Tipo de Topico</label>
+          </div>
+          <select class="custom-select" id="tipoTopico" name="codTipo">
+            <option value="0">Choose...</option>
+            <option value="1">Geometria</option>
+            <option value="2">Algebra</option>
+            <option value="3">Trigonometria</option>
+            <option value="4">Outros</option>
+          </select>
+         </div>
+         
+        <br>
+        <button type="submit" id="envio" class="btn btn-primary">Enviar</button>
+      </form>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
